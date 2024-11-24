@@ -18,7 +18,8 @@ provider "google" {
 }
 
 provider "kubernetes" {
-  host                   = google_container_cluster.airbyte-cluster.endpoint
+  #host                   = google_container_cluster.airbyte-cluster.endpoint
+  host                   = google_container_cluster.airbyte-cluster.endpoint != "" ? google_container_cluster.airbyte-cluster.endpoint : "https://example.com"
   token                  = data.google_client_config.default.access_token
   cluster_ca_certificate = base64decode(google_container_cluster.airbyte-cluster.master_auth[0].cluster_ca_certificate)
 }
@@ -36,6 +37,8 @@ resource "google_container_cluster" "airbyte-cluster" {
   location = "asia-northeast1"
 
   initial_node_count = 1
+
+  deletion_protection = false  # 削除保護を無効化
 
   node_config {
     machine_type = "e2-medium"
