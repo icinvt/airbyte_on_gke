@@ -12,7 +12,7 @@ terraform {
 }
 
 provider "google" {
-  project = "orbital-alpha-316500" # GCPプロジェクトID
+  project = "<YOUR PROJECT ID>" # GCPプロジェクトID
   region  = "asia-northeast1"
   zone    = "asia-northeast1-a"
 }
