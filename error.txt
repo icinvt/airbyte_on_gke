@@ -1,0 +1,35 @@
+Do you really want to destroy all resources?
+  Terraform will destroy all your managed infrastructure, as shown above.
+  There is no undo. Only 'yes' will be accepted to confirm.
+
+  Enter a value: yes
+
+helm_release.airbyte: Destroying... [id=airbyte]
+null_resource.get_credentials: Destroying... [id=1727270150743273961]
+null_resource.get_credentials: Destruction complete after 0s
+helm_release.airbyte: Still destroying... [id=airbyte, 10s elapsed]
+helm_release.airbyte: Still destroying... [id=airbyte, 20s elapsed]
+helm_release.airbyte: Still destroying... [id=airbyte, 30s elapsed]
+helm_release.airbyte: Destruction complete after 34s
+kubernetes_namespace.airbyte: Destroying... [id=airbyte]
+kubernetes_namespace.airbyte: Still destroying... [id=airbyte, 10s elapsed]
+kubernetes_namespace.airbyte: Still destroying... [id=airbyte, 20s elapsed]
+kubernetes_namespace.airbyte: Still destroying... [id=airbyte, 30s elapsed]
+kubernetes_namespace.airbyte: Still destroying... [id=airbyte, 40s elapsed]
+kubernetes_namespace.airbyte: Destruction complete after 43s
+google_container_cluster.airbyte-cluster: Destroying... [id=projects/orbital-alpha-316500/locations/asia-northeast1/clusters/airbyte-cluster]
+
+
+Invalid attribute in provider configuration
+
+  with provider["registry.terraform.io/hashicorp/kubernetes"],
+  on main.tf line 20, in provider "kubernetes":
+  20: provider "kubernetes" {
+
+'host' is not a valid URL
+
+╷
+│ Error: Cannot destroy cluster because deletion_protection is set to true. Set it to false to proceed with cluster deletion.
+│ 
+│ 
+╵
