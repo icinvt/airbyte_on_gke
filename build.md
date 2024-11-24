@@ -4,6 +4,7 @@
 - Google Cloud Projectを作成
 - Kubernetes Engine APIを有効化
 - gcloud CLIをインストール済み
+- GOOGLE_APPLICATION_CREDENTIALSの設定（gcloud auth application-default loginで再認証）
 
 ## 必要なツール
 - `kubectl`
