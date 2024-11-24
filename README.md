@@ -1,6 +1,6 @@
 # Google CloudのGKEにAirbyteをインストールする方法
 
-AirbyteをGoogle CloudでKubernetes上にデプロイする手順をまとめました。AirbyteはKubernetes上で公式のHelmチャートを使用して簡単にデプロイできます。
+AirbyteをGoogle CloudでKubernetes上にデプロイする手順です。AirbyteはKubernetes上で公式のHelmチャートを使用して簡単にデプロイできます。
 
 ## 構成手順
 
