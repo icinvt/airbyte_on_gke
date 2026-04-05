@@ -62,14 +62,14 @@ kubectl get service airbyte-airbyte-webapp-svc -n airbyte
 ### 出力例：
 ```
 NAME                       TYPE           CLUSTER-IP       EXTERNAL-IP    PORT(S)       AGE
-airbyte-airbyte-webapp-svc LoadBalancer   34.118.225.152   34.85.49.136   80:32118/TCP  7m39s
+airbyte-airbyte-webapp-svc LoadBalancer   34.118.225.152   XX.XX.XX.XX   80:32118/TCP  7m39s
 ```
 
-この場合、`EXTERNAL-IP`（例: `34.85.49.136`）がWeb UIのアクセスURLになります。
+この場合、`EXTERNAL-IP`（例: `XX.XX.XX.XX`）がWeb UIのアクセスURLになります。
 
 ### ブラウザでアクセス：
 ```
-http://34.85.49.136
+http://XX.XX.XX.XX
 ```
 
 ---

@@ -56,7 +56,7 @@ gcloud compute forwarding-rules list --filter="region:(asia-northeast1)"
 出力例：
 ```
 NAME                  REGION          IP_ADDRESS      IP_PROTOCOL  TARGET
-k8s-fw-abcdef123456   asia-northeast1 34.85.49.136    TCP          k8s-target-pool
+k8s-fw-abcdef123456   asia-northeast1 XX.XX.XX.XX    TCP          k8s-target-pool
 ```
 
 #### ターゲットプール（`<TARGET_POOL_NAME>`）の確認
@@ -78,7 +78,7 @@ gcloud compute addresses list --filter="region:(asia-northeast1)"
 出力例：
 ```
 NAME                  REGION          ADDRESS          STATUS
-k8s-static-ip         asia-northeast1 34.85.49.136     RESERVED
+k8s-static-ip         asia-northeast1 XX.XX.XX.XX     RESERVED
 ```
 
 ### リソースの削除
